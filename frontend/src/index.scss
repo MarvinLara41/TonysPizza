@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+}
+
+/**BUTTONS**/
+$color--button--landing: #ff0000;
+$color--button--a: #0077b6;
+
+@import "components/Nav/nav.scss";
+@import "components/Main/main.scss";
+@import "components/Footer/footer.scss";

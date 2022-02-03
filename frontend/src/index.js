@@ -16,10 +16,10 @@ ReactDOM.render(
               <a href="Menu">Menu</a>
             </li>
             <li>
-              <a href="SignIn">Sign in</a>
+              <a href="SignIn">Sign In</a>
             </li>
             <li>
-              <a href="Cart">Cart</a>
+              <a href="cart">Cart</a>
             </li>
           </ul>
         </nav>
@@ -31,7 +31,7 @@ ReactDOM.render(
             <button>
               <a href="main--box__menu">Menu</a>
             </button>
-            <p>OR</p>
+            <p>OR VIEW OUR </p>
             <button>
               <a href="main--box__deals">Deals</a>
             </button>

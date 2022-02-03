@@ -9,11 +9,20 @@
 
   & a {
     text-decoration: none;
-    color: #ffff;
+    color: $color-secondary;
     font-size: 1.7rem;
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & a:hover {
+    color: $color--button--hover;
+    width: 110%;
+    height: 110%;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -27,48 +36,41 @@
   }
 
   &__buttons {
-    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    max-width: 60%;
-    margin-top: 4rem;
+    margin: 2.5rem;
   }
 
   &__landing {
-    background-color: orange;
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 65%;
     height: 100%;
     margin: auto;
+
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 1rem;
+    }
   }
 
   &__pizza {
     display: flex;
     flex-direction: column;
-    height: 100%;
-
-    & img {
-      max-width: 45rem;
-      height: 45rem;
-    }
+    margin: 2.5rem;
   }
 
   &__sides {
     display: flex;
     flex-direction: column;
-
-    & img {
-      max-width: 35rem;
-      max-height: 35rem;
-    }
+    margin: 2.5rem;
   }
 
   &__order {
     & a {
-      color: $color--button--a;
       font-size: 5rem;
     }
   }

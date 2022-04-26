@@ -1,0 +1,25 @@
+/**  HEADER  **/
+
+.home__header {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  border-bottom: 0.3rem solid;
+  border-width: 0.2rem;
+  border-radius: 2rem;
+
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__links {
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin: 1.5rem;
+      }
+    }
+  }
+}

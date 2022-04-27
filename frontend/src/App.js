@@ -20,10 +20,15 @@ function App() {
             <li>
               <a href="/cart">Cart</a>
             </li>
+            <li>
+              <a href="/signin">Sign In</a>
+            </li>
           </ul>
         </div>
       </header>
-      <main>list products</main>
+      <main className="main">
+        <div className="main__products"> List products</div>
+      </main>
       <footer></footer>
     </div>
   );

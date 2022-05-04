@@ -28,14 +28,10 @@ app.use((err, req, res, next) => {
 
 const mongodbURI = config.MONGODB_URI;
 
-mongoose
-  .connect(mongodbURI, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-  })
+await mongoose
+  .connect(mongodbURI)
   .then(() => console.log("Connected to MongoDB"))
-  .catch((error) => console.log(error.reason));
+  .catch((error) => console.log("Error Connecting to Data Base", error.reason));
 
 //** Validating connecting to server */
 app.listen(PORT, () => {
